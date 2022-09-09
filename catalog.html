@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Каталог</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<script src="scripts/script.js"></script>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__logo">
+				<img src="images/logo.png">
+				<a href="main.html"></a>
+			</div>
+			<div class="katalog">
+				<img src="images/icons/shopping-bag 1.png">
+
+				<a href="">Каталог</a>
+			</div>
+			<div class="search">
+					<input type="text" name="search" placeholder="Найти">
+				</div>
+			<div class="log_in">
+				<img src="images/icons/avatar 1.png">
+				<a href="">Вход</a>
+			</div>
+			<div class="cart">
+				<img src="images/icons/shopping-cart 1.png">
+				<a href="">Корзина</a>
+			</div>
+		</div>
+	</header>
+	<content>
+		<div class="content__container">
+			<div class="filters__catalog">
+				<div class="filters">
+					<div class="filters__brand">
+						<h5>Бренд</h5>
+						<div class="filters__brand__chekbxs">
+							<input type="checkbox" class="custom-checkbox" id="Apple">
+							<label for="Apple">Apple</label><br>
+							<input type="checkbox" class="custom-checkbox" id="Samsung">
+							<label for="Samsung">Samsung</label><br>
+							<input type="checkbox" class="custom-checkbox" id="Xiaomi">
+							<label for="Xiaomi">Xiaomi</label><br>
+							<input type="checkbox" class="custom-checkbox" id="Huawei">
+							<label for="Huawei">Huawei</label><br>
+							<input type="checkbox" class="custom-checkbox" id="Google">
+							<label for="Google">Google</label><br>
+							<hr>
+						</div>
+					</div>
+					<div class="filters__RAM">
+						<h5>ОЗУ</h5>
+						<div class="filters__RAM__chekbxs">
+							<input type="checkbox" class="custom-checkbox" id="4">
+							<label for="4">4</label><br>
+							<input type="checkbox" class="custom-checkbox" id="6">
+							<label for="6">6</label><br>
+							<input type="checkbox" class="custom-checkbox" id="8">
+							<label for="8">8</label><br>
+							<hr>
+						</div>
+					</div>
+					<div class="filters__OS">
+						<h5>Операционная система</h5>
+						<div class="filters__OS__chekbxs">
+							<input type="checkbox" class="custom-checkbox" id="Android">
+							<label for="Android">Android</label><br>
+							<input type="checkbox" class="custom-checkbox" id="IOS">
+							<label for="IOS">IOS</label><br>
+							<hr>
+						</div>
+					</div>
+					<div class="filters__ROM">
+						<h5>Встроенная память</h5>
+						<div class="filters__ROM__chekbxs">
+							<input type="checkbox" class="custom-checkbox" id="32">
+							<label for="32">32</label><br>
+							<input type="checkbox" class="custom-checkbox" id="64">
+							<label for="64">64</label><br>
+							<input type="checkbox" class="custom-checkbox" id="128">
+							<label for="128">128</label><br>
+							<input type="checkbox" class="custom-checkbox" id="256">
+							<label for="256">256</label><br>
+							<hr>
+						</div>
+					</div>
+					<div class="filters__cost">
+						<h5>Цена</h5>
+						<div class="filters__cost__numbs">
+							<div class="filters__cost__numbs__num1">
+								<p>От</p>
+								<input type="number" class="filters__cost__numbs__numb">
+							</div>
+							<div class="filters__cost__numbs__num1">
+								<p>До</p>
+								<input type="number" class="filters__cost__numbs__numb">
+							</div>
+
+						</div>
+						<hr>
+					</div>
+					<div class="filters__colors">
+						<h5>Цвет</h5>
+						<div class="filters__colors__buttons">
+							<input type="button" class="filters__colors__buttons__bnt1">
+							<input type="button" class="filters__colors__buttons__bnt2">
+							<input type="button" class="filters__colors__buttons__bnt3">
+							<input type="button" class="filters__colors__buttons__bnt4">
+							<input type="button" class="filters__colors__buttons__bnt5">
+							<input type="button" class="filters__colors__buttons__bnt6">
+							<input type="button" class="filters__colors__buttons__bnt7">
+						</div>
+						<hr>
+					</div>
+					<div class="filters__res">
+						<h5>Разрешение экрана</h5>
+						<div class="filters__res__chkbxes">
+							<input type="checkbox" class="custom-checkbox" id="1600х720">
+							<label for="1600х720">1600х720</label><br>
+							<input type="checkbox" class="custom-checkbox" id="1792х828">
+							<label for="1792х828">1792х828</label><br>
+							<input type="checkbox" class="custom-checkbox" id="2340х1080">
+							<label for="2340х1080">2340х1080</label><br>
+							<input type="checkbox" class="custom-checkbox" id="2400х1080">
+							<label for="2400х1080">2400х1080</label><br>
+							<input type="checkbox" class="custom-checkbox" id="2532х1170">
+							<label for="2532х1170">2532х1170</label><br>
+							<hr>
+						</div>
+					</div>
+				</div>		
+				<div class="catalog__content">
+					<div class="catalog__content__sort">
+						<div class="catalog__content__sort__sort_by">
+
+						<!-- <div class="dropdown">
+  								<button onclick="myFunction()" class="dropbtn"><img src="images/	arrow.png" name="arrow_down">Бренд</button>
+  								<div id="myDropdown" class="dropdown-content">
+    								<a href="#">Link 1</a>
+    								<a href="#">Link 2</a>
+    								<a href="#">Link 3</a>
+  								</div>
+							</div> -->
+
+							<p><span>Сортировать: </span><span>по популярности</span></p>
+						</div>
+						<div class="catalog__content__sort__icons">
+							<img src="images/icons/sort_by.png">
+						</div>
+					</div>
+					<div class="catalog__content__products">
+						<div class="card">
+							<img src="images/iphone 12 pro.png">
+							<p>Смартфон Apple iPhone 12 Pro Max 256 ГБ серебристый</p>
+							<h2>119 999 ₽</h2>
+							<button>В корзину</button>
+						</div>
+						<div class="card">
+							<img src="images/galaxy s20.png">
+							<p>Смартфон Samsung Galaxy S20 128 ГБ серый</p>
+							<h2>69 999 ₽</h2>
+							<button>В корзину</button>
+						</div>
+						<div class="card">
+							<img src="images/redmi note 9 pro.png">
+							<p>Смартфон Xiaomi Redmi Note 9 Pro 128 ГБ серый</p>
+							<h2>23 999 ₽</h2>
+							<button>В корзину</button>
+						</div>
+						<div class="card">
+							<img src="images/iphone 11.png">
+							<p>Смартфон Apple iPhone 11 128 ГБ черный</p>
+							<h2>59 999 ₽</h2>
+							<button>В корзину</button>
+						</div>
+						<div class="card">
+							<img src="images/iphone 12.png">
+							<p>Смартфон Apple iPhone 12 128 ГБ черный</p>
+							<h2>84 999 ₽</h2>
+							<button>В корзину</button>
+						</div>
+						<div class="card">
+							<img src="images/iphone 12 pro.png">
+							<p>Смартфон Apple iPhone 12 Pro Max 256 ГБ серебристый</p>
+							<h2>119 999 ₽</h2>
+							<button>В корзину</button>
+						</div>
+						<div class="card">
+							<img src="images/galaxy s20.png">
+							<p>Смартфон Samsung Galaxy S20 128 ГБ серый</p>
+							<h2>69 999 ₽</h2>
+							<button>В корзину</button>
+						</div>
+						<div class="card">
+							<img src="images/redmi note 9 pro.png">
+							<p>Смартфон Xiaomi Redmi Note 9 Pro 128 ГБ серый</p>
+							<h2>23 999 ₽</h2>
+							<button>В корзину</button>
+						</div>
+						<div class="card">
+							<img src="images/iphone 11.png">
+							<p>Смартфон Apple iPhone 11 128 ГБ черный</p>
+							<h2>59 999 ₽</h2>
+							<button>В корзину</button>
+						</div>
+						<div class="card">
+							<img src="images/iphone 12 pro.png">
+							<p>Смартфон Apple iPhone 12 Pro Max 256 ГБ серебристый</p>
+							<h2>119 999 ₽</h2>
+							<button>В корзину</button>
+						</div>
+						<div class="card">
+							<img src="images/galaxy s20.png">
+							<p>Смартфон Samsung Galaxy S20 128 ГБ серый</p>
+							<h2>69 999 ₽</h2>
+							<button>В корзину</button>
+						</div>
+						<div class="card">
+							<img src="images/redmi note 9 pro.png">
+							<p>Смартфон Xiaomi Redmi Note 9 Pro 128 ГБ серый</p>
+							<h2>23 999 ₽</h2>
+							<button>В корзину</button>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+	</content>
+	<footer>
+		<div class="footer__container1">
+			<div class="footer__container2">
+				<div class="footer__logo">
+					<img src="images/logo.png">
+				</div>
+				<div class="footer__social_media">
+					<img src="images/icons/vk.png">
+					<img src="images/icons/fb.png">
+					<img src="images/icons/twit.png">
+					<img src="images/icons/inst.png">
+					<img src="images/icons/yt.png">
+				</div>
+			</div>
+			<div class="footer__container3">
+				<div class="footer__container4">
+					<div class="footer__menu">
+						<h3>Меню сайта</h3>
+						<p>О компании</p>
+						<p>Каталог</p>
+						<p>Личный кабинет</p>
+					</div>
+					<div class="footer__contacts">
+						<h3>Контакты</h3>
+						<p>+7 (911) 295-78-85</p>
+						<p>+7 (977) 385-28-48</p>
+						<p>gstore@inbox.com</p>
+					</div>
+				</div>
+				<div class="footer__map">
+					<h3>Мы на карте</h3>
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A451007a3d8b72993f2c1189d4dd7610e8d5cb91782a3b7c7773eca7fbc2e8808&amp;source=constructor" width="789" height="285" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="rights">
+			<hr>
+			<p>© “G STORE”, 2021. Все права защищены</p>
+		</div>
+	</footer>
+</body>
+</html>
