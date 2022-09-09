@@ -160,7 +160,7 @@ content {
 h1 {
 	font-size: 28px;
 	font-weight: bold;
-	color: #00000;
+	color: #0000;
 }
 
 .current_offers {
@@ -174,8 +174,6 @@ h1 {
 	justify-content: space-between;
 	max-width: 1282px;
 	flex-wrap: wrap;
-	
-
 }
 
 h2 {
@@ -302,7 +300,7 @@ h3 {
 	margin-bottom: 30px;
 }
 
-.footer__menu>p {
+.footer__menu>a p {
 	font-family: 'Ubuntu', sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -559,7 +557,7 @@ form>input {
 	justify-content: space-between;
 }
 .reception__content__buttons>input[type="button"]{ 
-	t-family: Ubuntu;
+	font-family: Ubuntu;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -686,7 +684,7 @@ form>input {
 
 	font-weight: bold;
 }
-.shopping_cart__right>input[type="button"] {
+.shopping_cart__right input[type="button"] {
 	margin: 0 23px;
 	text-align: center;
 	width: 83%;
@@ -839,12 +837,6 @@ form>input {
 	background: #FFFFFF;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 15px;
-}
-..product__container__left__image>img{
-	/*display: flex;
-	max-width: 300px;
-	max-height: 350px;
-	width: 1vw;*/
 }
 .product__container__left__customization{
 	display: flex;
